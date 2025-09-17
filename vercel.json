@@ -11,9 +11,5 @@
       "src": "/api/(.*)",
       "dest": "/api/$1"
     }
-  ],
-  "env": {
-    "NEXT_PUBLIC_KEY_PEM": "@next_public_key_pem",
-    "NEXT_PUBLIC_PRIVATE_KEY_PEM": "@next_public_private_key_pem"
-  }
+  ]
 }
