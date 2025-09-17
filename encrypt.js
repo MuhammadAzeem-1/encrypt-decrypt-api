@@ -14,7 +14,7 @@ function encryptDataWithRSA_AES(payload) {
   cipher.finish();
   const encryptedJsonData = forge.util.encode64(cipher.output.getBytes());
 
-  const _publicKeyPem = process.env.NEXT_PUBLIC_KEY_PEM;
+  const _publicKeyPem = process.env.PEM;
   if (!_publicKeyPem) {
     throw new Error("Public key is not defined in environment variables");
   }

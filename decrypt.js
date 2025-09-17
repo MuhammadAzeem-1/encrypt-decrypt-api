@@ -1,7 +1,7 @@
 const forge = require("node-forge");
 
 function decryptDataWithRSA_AES(encrypted) {
-  const _privateKeyPem = process.env.NEXT_PUBLIC_PRIVATE_KEY_PEM;
+  const _privateKeyPem = process.env.PRIVATE_KEY_PEM;
   if (!_privateKeyPem) {
     throw new Error("Private key is not defined in environment variables");
   }
